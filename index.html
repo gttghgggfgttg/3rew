@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Формы</title>
+    <style>
+        form {
+            width: 50;
+            background-color: firebrick;
+            margin: auto;
+            border: lpx solid red;
+            border-radius: 10px;
+        }
+
+        form
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h3>Формы регистрации</h3>
+        <fieldset>
+            <legend>Регистрационные данные</legend>
+            Введите логин <input type="text" placeholder="Ваш логин" name="login" required> <br> <br>
+            Введите пароль <input type="password" placeholder="Ваш пароль" name="pass" required> <br> <br>
+            Введите почту <input type="text" placeholder="Ваша почта" name="email" required> <br> <br>
+            Введите дату рождение <input type="text" placeholder="Дата рождения" name="data" required> <br> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Ваши интересы</legend>
+            <input type="checkbox" name="interessting" placeholder="Музыка" id="music"> <label
+                for="music">Музыка</label>
+            <br>
+            <input type="checkbox" name="Sport" placeholder="Спорт" id="Sport"> <label for="Sport">Спорт</label> <br>
+            <input type="checkbox" name="Programming" placeholder="Програмирование" id="Programming"> <label
+                for="Programming">Програмирование</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Род дейтельности</legend>
+            <label>
+                <input type="radio" name="action"> Работаю
+            </label> <br>
+            <label>
+                <input type="radio" name="action"> Не работаю
+            </label> <br>
+            <label>
+                <input type="radio" name="action"> Учусь
+            </label> <br>
+        </fieldset> <br>
+        Укажите готод <br>
+        <select name="city"> <br>
+            <option selected disabled value="Тюмень">Выберите город</option>
+            <option value="Тюмень">Владивосток</option>
+            <option value="Владивосток">Москва</option>
+            <option value="Москва">Тюмень</option>
+        </select> <br> <br>
+        <textarea name="about-info" placeholder="Информация обо мне" cols="50" rows="10"></textarea>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>
